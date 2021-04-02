@@ -11,8 +11,8 @@ export const toggleTodo = (id) => ({
   id
 })
 
-export const visibilityFilter = [
-  'ALL_TODOS',
-  'ACTIVE_TODOS',
-  'COMPLETE_TODOS'
-]
+export const VisibilityFilters = {
+  SHOW_ALL: 'SHOW_ALL',
+  SHOW_COMPLETE: 'SHOW_COMPLETE',
+  SHOW_ACTIVE: 'SHOW_ACTIVE'
+}
