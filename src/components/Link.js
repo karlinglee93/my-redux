@@ -1,13 +1,12 @@
 import React from 'react'
 
-//const handleClick = () => {
-//  
-//}
-
-const Link = ({ filter, setVisibilityFilter, children }) => {
+const Link = ({ active, onClick, children }) => {
   
   return (
-    <button onClick={() => setVisibilityFilter(filter)}>
+    <button 
+      disabled={active}
+      onClick={onClick}
+    >
       {children}
     </button>
   )
